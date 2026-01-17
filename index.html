@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Servitec Medellin</title>
+  <link rel="stylesheet" href="styles.css" />
+  
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <a href="#" class="logo">
+      <div class="logo-icon">🔧</div> <!-- Puedes reemplazar por imagen real -->
+      <div class="logo-text">
+        <div class="main">Servitec Medellin</div>
+        <div class="sub">Línea Blanca</div>
+      </div>
+    </a>
+
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="nav-menu" id="navMenu">
+      <a href="#">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#formulario">Contacto</a>
+      <a href="tel:+573181349776" class="call-button">
+        <span>📞</span> Llamar Ahora
+      </a>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('navMenu');
+
+  if (hamburger && navMenu) {
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+      hamburger.classList.toggle('active');
+    });
+
+    // Cerrar al clickear enlace
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+        hamburger.classList.remove('active');
+      });
+    });
+  }
+</script>
+
+<!-- Hero Section -->
+    <section class="hero">
+        <!-- Texto principal -->
+        <div class="hero-text">
+            <h1>Mantenimiento y <span> reparación de electrodomésticos</span></h1>
+            <p class="hero-description">
+               Somos expertos en reparación, mantenimiento e instalaciones, ofreciendo soluciones profesionales, eficientes y adaptadas a las necesidades de cada cliente.
+            
+            </p>
+
+            <div class="features">
+                <div class="feature-pill"><strong><img src="/img/herramientas-para-reparar.png" class="icon"></strong> Técnicos Calificados</div>
+                <div class="feature-pill"><strong><img src="/img/despertador.png" alt="" class="icon"></strong> Visita el Mismo Día</div>
+                <div class="feature-pill"><strong><img src="/img/piezas-de-repuesto.png" alt="" class="icon"></strong> Repuestos de Calidad</div>
+            </div>
+
+
+             <!-- Botones de acción -->
+             
+    <div class="actions">
+        <a href="#formulario" class="btn btn-primary">Solicitar Reparación</a>
+        <a href="tel:+573181349776" class="btn btn-outline">Llamar Ahora</a>
+    </div>
+        </div>
+
+        <!-- Billboard azul -->
+         <img src="/img/electrodomesticos.png" alt="" class="billboard">
+    
+    </section>
+
+    
+
+
+
+
+   
+
+    <section class="services-container" id="servicios">
+        <h1 class="section-title">Nuestros Servicios Especializados</h1>
+        <p class="section-description">Brindamos soluciones integrales y duraderas para los electrodomésticos esenciales de tu hogar. Cada reparación es realizada con precisión y profesionalismo.</p>
+
+        <div class="services-grid">
+            <!-- Tarjeta 1: Reparación de Neveras -->
+            <div class="service-card">
+                <img src="img/nevera-inteligente.png" class="service-icon" alt="">
+               
+                <h2 class="service-title">Reparación de Neveras</h2>
+                <p class="service-desc">Especialistas en refrigeración para manejar desde fallas comunes hasta problemas complejos, asegurando que tu nevera funcione de manera óptima.</p>
+                <div class="coverage-title">Cobertura de fallas comunes:</div>
+                <ul class="coverage-list">
+                    <li class="coverage-item"><span class="check-icon">✓</span> Fallas de enfriamiento</li>
+                    <li class="coverage-item"><span class="check-icon">✓</span> Ruidos y vibraciones</li>
+                    <li class="coverage-item"><span class="check-icon">✓</span> Fugas de agua</li>
+                    <li class="coverage-item"><span class="check-icon">✓</span> Problemas con dispensador</li>
+                    <li class="coverage-item"><span class="check-icon">✓</span> Fallos en tarjeta electrónica</li>
+                </ul>
+                <div class="service-buttons">
+                    <a href="tel:+573181349776" class="btn btn-call">📞 Llamar</a>
+                    <a href="https://wa.me/573181349776?text=Hola%2C%20necesito%20reparaci%C3%B3n%20de%20nevera" class="btn btn-whatsapp">💬 WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2: Reparación de Lavadoras -->
+            <div class="service-card">
+                <img src="img/lavadora.png" class="service-icon" alt="">
+               
+                <h2 class="service-title">Reparación de Lavadoras</h2>
+                <p class="service-desc">Diagnosticamos y reparamos todo tipo de problemas en lavadoras y secadoras, sin importar la marca, para que tu ropa siempre esté impecable.</p>
+                <div class="coverage-title">Cobertura de fallas comunes:</div>
+                <ul class="coverage-list">
+                    <li class="coverage-item"><span class="check-icon">✓</span> Problemas de centrifugado</li>
+                    <li class="coverage-item"><span class="check-icon">✓</span> No enciende o se detiene</li>
+                    <li class="coverage-item"><span class="check-icon">✓</span> Fugas de agua</li>
+                    <li class="coverage-item"><span class="check-icon">✓</span> Ruidos fuertes en ciclo</li>
+                    <li class="coverage-item"><span class="check-icon">✓</span> Reparación de panel de control</li>
+                </ul>
+                <div class="service-buttons">
+                    <a href="tel:+573181349776" class="btn btn-call">📞 Llamar</a>
+                    <a href="https://wa.me/573181349776?text=Hola%2C%20necesito%20reparaci%C3%B3n%20de%20lavadora" class="btn btn-whatsapp">💬 WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3: Estufas y Hornos -->
+            <div class="service-card">
+                <img src="/img/kitchen-pack_331134.png" class="service-icon" alt="">
+               
+                <h2 class="service-title">Estufas y Hornos</h2>
+                <p class="service-desc">Soluciones expertas para problemas de cocción. Reparamos estufas y hornos a gas o eléctricos para garantizar tu seguridad y su perfecto funcionamiento.</p>
+                <div class="coverage-title">Cobertura de fallas comunes:</div>
+                <ul class="coverage-list">
+                    <li class="coverage-item"><span class="check-icon">✓</span> Quemadores no encienden</li>
+                    <li class="coverage-item"><span class="check-icon">✓</span> El horno no calienta</li>
+                    <li class="coverage-item"><span class="check-icon">✓</span> Fugas de gas</li>
+                    <li class="coverage-item"><span class="check-icon">✓</span> Problemas con el termostato</li>
+                    <li class="coverage-item"><span class="check-icon">✓</span> Fallos en el encendido electrónico</li>
+                </ul>
+                <div class="service-buttons">
+                    <a href="tel:+573181349776" class="btn btn-call">📞 Llamar</a>
+                    <a href="https://wa.me/573181349776?text=Hola%2C%20necesito%20reparaci%C3%B3n%20de%20estufa%20u%20horno" class="btn btn-whatsapp">💬 WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- Tarjeta 4: Calentadores y Campanas -->
+            <div class="service-card">
+                <img src="img/calentador.png" alt=""  class="service-icon">
+                
+                <h2 class="service-title">Calentadores y Campanas</h2>
+                <p class="service-desc">Mantenimiento y reparación de calentadores de agua y campanas extractoras. Aseguramos agua caliente constante y una cocina libre de humos.</p>
+                <div class="coverage-title">Cobertura de fallas comunes:</div>
+                <ul class="coverage-list">
+                    <li class="coverage-item"><span class="check-icon">✓</span> El calentador no enciende</li>
+                    <li class="coverage-item"><span class="check-icon">✓</span> Agua no calienta lo suficiente</li>
+                    <li class="coverage-item"><span class="check-icon">✓</span> Campana no extrae humo</li>
+                    <li class="coverage-item"><span class="check-icon">✓</span> Ruidos en el motor</li>
+                    <li class="coverage-item"><span class="check-icon">✓</span> Mantenimiento y limpieza</li>
+                </ul>
+                <div class="service-buttons">
+                    <a href="tel:+573181349776" class="btn btn-call">📞 Llamar</a>
+                    <a href="https://wa.me/573181349776?text=Hola%2C%20necesito%20reparaci%C3%B3n%20de%20calentador%20o%20campana" class="btn btn-whatsapp">💬 WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="trust-section" id="nosotros">
+        <h1 class="section-title">¿Por Qué Confiar en <span>Nosotros?</span></h1>
+        <p class="section-description">Brindamos un servicio tecnico especializado,comprometido con la calidad y satisfaccion del cliente con garantia directamente con la marca</p>
+
+        <div class="trust-grid">
+            <!-- Tarjeta 1 -->
+            <div class="trust-card">
+                <img src="img/experto.png"  class="card-icon" alt="">
+                
+                <h2 class="card-title">Especialistas Calificados</h2>
+                <p class="card-desc">Nuestro equipo está formado por técnicos con formación específica en línea blanca, asegurando un diagnóstico certero.</p>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="trust-card">
+                <img src="img/despertador.png" class="card-icon" alt="">
+                
+                <h2 class="card-title">Puntualidad y Eficiencia</h2>
+                <p class="card-desc">Valoramos tu tiempo. Agendamos visitas el mismo día y cumplimos con los horarios acordados para tu comodidad.</p>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="trust-card">
+                <img src="img/piezas-de-repuesto.png" class="card-icon" alt="">
+                
+                <h2 class="card-title">Repuestos de Alta Calidad</h2>
+                <p class="card-desc">Solo utilizamos repuestos adecuados para cada marca y modelo, prolongando la vida útil de tu electrodoméstico.</p>
+            </div>
+
+            <!-- Tarjeta 4 -->
+            <div class="trust-card">
+                <img src="img/reparacion-del-coche.png" class="card-icon" alt="">
+               
+                <h2 class="card-title">Cobertura en Todo Medellín</h2>
+                <p class="card-desc">Llegamos a todas las comunas y corregimientos del área metropolitana, llevando la solución hasta tu puerta.</p>
+            </div>
+
+            <!-- Tarjeta 5 -->
+            <div class="trust-card">
+                <img src="img/cerrar-con-llave.png" class="card-icon" alt="">
+               
+                <h2 class="card-title">Transparencia en Precios</h2>
+                <p class="card-desc">Ofrecemos un presupuesto claro y detallado antes de iniciar cualquier trabajo. Sin costos ocultos ni sorpresas.</p>
+            </div>
+
+            <!-- Tarjeta 6 -->
+            <div class="trust-card">
+                <img src="img/apoyo.png" class="card-icon" alt="">
+              
+                <h2 class="card-title">Atención Personalizada</h2>
+                <p class="card-desc">Escuchamos tus necesidades y te mantenemos informado durante todo el proceso de reparación.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Sección 1: Filosofía de Trabajo -->
+    <section class="philosophy-section">
+        <div class="philosophy-container">
+            <h2 class="philosophy-title">Nuestra Filosofía de Trabajo</h2>
+
+            <div class="philosophy-content">
+                <p class="philosophy-text">
+                    Creemos en un trabajo bien hecho desde la primera visita. Nos enfocamos en un diagnóstico preciso para ofrecer una solución definitiva, no un arreglo temporal. 
+                    Cada técnico se especializa en línea blanca, lo que nos permite entender a fondo el funcionamiento de cada equipo y aplicar la reparación más efectiva, 
+                    optimizando el rendimiento de tus electrodomésticos.
+                </p>
+
+                <div class="philosophy-buttons">
+                    <a href="#diagnostico" class="btn-philosophy btn-diagnostico">Diagnóstico Preciso</a>
+                    <a href="#soluciones" class="btn-philosophy btn-soluciones">Soluciones Duraderas</a>
+                </div>
+            </div>
+
+            <!-- Imagen (usa una real o esta de stock) -->
+            <img src="img/reparacion.webp" 
+                 alt="Técnico y cliente feliz revisando nevera" 
+                 class="philosophy-image">
+        </div>
+    </section>
+
+    <!-- Sección 2: CTA - ¿Necesita ayuda? -->
+    <section class="cta-section">
+        <h1 class="cta-title">¿Tu electrodoméstico necesita ayuda?</h1>
+        <p class="cta-description">
+            No esperes más. Contáctanos ahora y deja que nuestros técnicos expertos devuelvan la vida a tus aparatos. 
+            ¡Estamos listos para atenderte!
+        </p>
+
+        <div class="cta-buttons">
+            <a href="tel:+573181349776" class="btn-cta btn-call">📞 Llamar Ahora</a>
+            <a href="https://wa.me/573181349776?text=Hola%21%20Mi%20electrodom%C3%A9stico%20necesita%20reparaci%C3%B3n%20urgente" 
+               class="btn-cta btn-whatsapp">💬 Chatear por WhatsApp</a>
+        </div>
+    </section>
+
+
+    
+
+
+
+
+<section class="contact-section" id="formulario">
+        <h1 class="section-title">Agenda tu Visita</h1>
+        <p class="section-description">Completa el formulario y un especialista se pondrá en contacto para coordinar la visita técnica.</p>
+
+        <div class="contact-grid">
+            <!-- Formulario izquierda -->
+            <div class="form-container">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="telefono">Teléfono de Contacto *</label>
+                        <input type="tel" id="telefono" placeholder="318 134 9776" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="electrodomestico">Electrodoméstico a Revisar *</label>
+                        <select id="electrodomestico" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="nevera">Nevera</option>
+                            <option value="lavadora">Lavadora</option>
+                            <option value="estufa">Estufa</option>
+                            <option value="horno">Horno</option>
+                            <option value="calentador">Calentador</option>
+                            <option value="campana">Campana</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="descripcion">Describe brevemente el problema</label>
+                        <textarea id="descripcion" placeholder="Ej: Mi nevera no enfría en la parte de abajo."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico (Opcional)</label>
+                        <input type="email" id="email" placeholder="tu@email.com">
+                    </div>
+                    <button type="submit" class="submit-btn">✉️ Enviar Solicitud</button>
+                </form>
+
+                <!-- Mensaje de éxito -->
+                <div id="success-message" class="success-message">
+                    ¡Solicitud Recibida! Gracias por contactarnos. Uno de nuestros técnicos te llamará en breve.
+                </div>
+            </div>
+<!-- Información de contacto con botones funcionales -->
+            <div class="info-side">
+                <h2>Canales de Atención</h2>
+
+                <!-- Botón de llamada directa -->
+                <div class="contact-item">
+                    <a href="tel:+573181349776" class="contact-button">
+                        <span class="contact-icon">📞</span>
+                        Llamada Directa - 318 134 9776
+                    </a>
+                </div>
+
+               <!-- Botón de correo electrónico -->
+                <div class="contact-item">
+                    <a href="mailto:info@tecnicosmedellin.com?subject=Solicitud%20de%20Visita%20Técnica&body=Hola,%20necesito%20servicio%20técnico%20para%20mi%20electrodoméstico." 
+                       class="contact-button" 
+                       style="background: #2563eb;">
+                        <span class="contact-icon">✉️</span>
+                        Enviar Correo Electrónico
+                    </a>
+                </div>
+
+
+                <div class="info-group">
+                    <h2 class="info-title">Horario de Atención</h2>
+                    <p class="info-desc">
+                        Lunes a Viernes: 8:00 AM - 6:00 PM<br>
+                        Sábados: 9:00 AM - 2:00 PM<br>
+                        Domingos y Festivos: No disponible
+                    </p>
+                </div>
+                <div class="info-note">
+                    Atendemos únicamente con cita previa.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS para enviar por WhatsApp y mostrar mensaje de éxito -->
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Capturar datos del formulario
+            const telefono = document.getElementById('telefono').value;
+            const electrodomestico = document.getElementById('electrodomestico').value;
+            const descripcion = document.getElementById('descripcion').value;
+            const email = document.getElementById('email').value;
+
+            // Construir mensaje para WhatsApp
+            let mensaje = `Hola, quiero solicitar una visita técnica.\n`;
+            mensaje += `Teléfono: ${telefono}\n`;
+            mensaje += `Electrodoméstico: ${electrodomestico}\n`;
+            if (descripcion) mensaje += `Descripción del problema: ${descripcion}\n`;
+            if (email) mensaje += `Email: ${email}\n`;
+
+            // URL de WhatsApp (número del contexto anterior)
+            const whatsappUrl = `https://wa.me/573181349776?text=${encodeURIComponent(mensaje)}`;
+
+            // Abrir WhatsApp en nueva pestaña
+            window.open(whatsappUrl, '_blank');
+
+            // Mostrar mensaje de éxito y ocultar formulario
+            document.getElementById('contact-form').style.display = 'none';
+            document.getElementById('success-message').style.display = 'block';
+        });
+    </script>
+<footer>
+    <div class="footer-container">
+        <!-- Todo el contenido centrado -->
+        <div class="footer-content">
+            <!-- Logo y descripción -->
+            <div class="footer-header">
+                <div class="footer-logo">
+                    <div class="footer-logo-icon">🔧</div>
+                    <div>
+                        <div class="footer-logo-main">Servitec Medellin</div>
+                        <span class="footer-logo-sub">Línea Blanca</span>
+                    </div>
+                </div>
+                <p class="footer-description">
+                    Soluciones profesionales para la reparación, mantenimiento e instalación de electrodomésticos en Medellín.
+                </p>
+            </div>
+
+          
+          
+                
+                <!-- Columna Navegación -->
+                <div class="footer-column">
+                    <h3>Navegación</h3>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+
+          
+          
+
+            <!-- Línea divisoria -->
+            <div class="footer-divider"></div>
+
+            <!-- Copyright centrado debajo de todo -->
+            <div class="footer-bottom">
+                © 2026 Servitec Medellin. Todos los derechos reservados.
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
